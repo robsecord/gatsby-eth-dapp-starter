@@ -6,9 +6,9 @@
 - Coinbase WalletLink -- **Done**
 - Fortmatic -- **Done**
 - Metamask -- **Done**
-- Native (Toshi, Cipher, Status, etc..) -- **Done**
-- ~~Torus~~ -- _todo_
-- ~~Wallet Connect~~ -- _todo_
+- Torus -- **Done**
+- Native (Toshi, Cipher, Status, etc..) -- **Partially Done**
+- Wallet Connect -- **Done**
 - ~~Arkane Network~~ -- _todo_
 - ~~Ledger/Trezor~~ -- _todo_
 

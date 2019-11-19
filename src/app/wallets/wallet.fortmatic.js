@@ -11,10 +11,8 @@ class FortmaticWallet extends IWalletBase {
     }
 
     async init({rpcUrl, chainId}) {
-        const chainName = this.getChainName(chainId);
-
         // Initialize Fortmatic
-        this.fortmatic = new Fortmatic(process.env.GATSBY_FORTMATIC_APIKEY, chainName);
+        this.fortmatic = new Fortmatic(process.env.GATSBY_FORTMATIC_APIKEY);
 
         // Initialize a Web3 Provider object
         this.ethereum = this.fortmatic.getProvider();

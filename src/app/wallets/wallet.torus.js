@@ -23,7 +23,7 @@ class TorusWallet extends IWalletBase {
             network : {
                 host        : chainName,
             },
-            showTorusButton : true, // default: true
+            showTorusButton : false, // default: true
         });
 
         // Initialize Base

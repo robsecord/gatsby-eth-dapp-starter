@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d80ab86-5c89-4003-b2b5-36e4c924ec65" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/wallets/wallet.torus.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gatsby-eth-dapp-starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gatsby-eth-dapp-starter.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/wallets/wallet.walletconnect.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/stores/wallet.store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/stores/wallet.store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/utils/globals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/globals.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/wallets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/wallets/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/wallets/wallet.coinbase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/wallets/wallet.coinbase.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/wallets/wallet.fortmatic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/wallets/wallet.fortmatic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/wallets/wallet.interface.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/wallets/wallet.interface.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/wallets/wallet.metamask.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/wallets/wallet.metamask.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/wallets/wallet.native.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/wallets/wallet.native.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/wallets/wallet.torus.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/wallets/wallet.torus.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -58,20 +52,20 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/app/utils/globals.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="41">
-                  <caret line="5" column="25" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="25" />
+                <state relative-caret-position="56">
+                  <caret line="6" column="33" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="33" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/.env.development">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="15">
-                  <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+                  <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -79,7 +73,7 @@
         </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="vertical" split-proportion="0.24517906">
+        <splitter split-orientation="vertical" split-proportion="0.35812673">
           <split-first>
             <leaf>
               <file pinned="false" current-in-tab="false">
@@ -121,8 +115,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/app/main.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="74">
-                      <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+                    <state relative-caret-position="66">
+                      <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
                     </state>
                   </provider>
                 </entry>
@@ -152,8 +146,8 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/app/wallets/index.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="643">
-                      <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+                    <state relative-caret-position="182">
+                      <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
                     </state>
                   </provider>
                 </entry>
@@ -161,8 +155,8 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/app/wallets/wallet.interface.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="229">
-                      <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+                    <state relative-caret-position="366">
+                      <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
                     </state>
                   </provider>
                 </entry>
@@ -179,17 +173,26 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/app/wallets/wallet.fortmatic.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="79">
-                      <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+                    <state relative-caret-position="255">
+                      <caret line="17" column="53" lean-forward="true" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/app/wallets/wallet.torus.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="69">
+                      <caret line="21" column="48" lean-forward="true" selection-end-line="53" />
                     </state>
                   </provider>
                 </entry>
               </file>
               <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/app/wallets/wallet.torus.js">
+                <entry file="file://$PROJECT_DIR$/src/app/wallets/wallet.walletconnect.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="30">
-                      <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+                    <state relative-caret-position="148">
+                      <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
                     </state>
                   </provider>
                 </entry>
@@ -197,8 +200,8 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/app/wallets/wallet.metamask.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="450">
-                      <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+                    <state relative-caret-position="90">
+                      <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
                     </state>
                   </provider>
                 </entry>
@@ -250,20 +253,21 @@
         <option value="$PROJECT_DIR$/src/app/utils/wallet/wallet.interface.js" />
         <option value="$PROJECT_DIR$/src/app/app.js" />
         <option value="$PROJECT_DIR$/src/app/README.md" />
-        <option value="$PROJECT_DIR$/.env.development" />
         <option value="$PROJECT_DIR$/config.js" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/app/utils/globals.js" />
         <option value="$PROJECT_DIR$/src/app/wallets/wallet.native.js" />
         <option value="$PROJECT_DIR$/src/app/wallets/wallet.metamask.js" />
         <option value="$PROJECT_DIR$/src/app/wallets/wallet.coinbase.js" />
         <option value="$PROJECT_DIR$/src/app/main.js" />
-        <option value="$PROJECT_DIR$/src/app/wallets/index.js" />
         <option value="$PROJECT_DIR$/src/app/login.js" />
         <option value="$PROJECT_DIR$/src/app/stores/wallet.store.js" />
         <option value="$PROJECT_DIR$/src/app/wallets/wallet.interface.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.env.development" />
         <option value="$PROJECT_DIR$/src/app/wallets/wallet.fortmatic.js" />
         <option value="$PROJECT_DIR$/src/app/wallets/wallet.torus.js" />
+        <option value="$PROJECT_DIR$/src/app/utils/globals.js" />
+        <option value="$PROJECT_DIR$/src/app/wallets/index.js" />
+        <option value="$PROJECT_DIR$/src/app/wallets/wallet.walletconnect.js" />
       </list>
     </option>
   </component>
@@ -370,7 +374,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574122750181</updated>
-      <workItem from="1574122751372" duration="18233000" />
+      <workItem from="1574122751372" duration="20324000" />
     </task>
     <task id="LOCAL-00001" summary="Added MetaMask&#10;Minor updates and refactors">
       <created>1574140795624</created>
@@ -386,11 +390,18 @@
       <option name="project" value="LOCAL" />
       <updated>1574142680725</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Torus support&#10;minor refactors">
+      <created>1574145396073</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574145396073</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18233000" />
+    <option name="totallyTimeSpent" value="20324000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -433,7 +444,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Added MetaMask&#10;Minor updates and refactors" />
     <MESSAGE value="Added Native Web3 support" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Native Web3 support" />
+    <MESSAGE value="Added Torus support&#10;minor refactors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Torus support&#10;minor refactors" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -574,69 +586,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="135">
-            <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/utils/globals.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/wallets/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/wallets/wallet.native.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/wallets/wallet.metamask.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/wallets/wallet.interface.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env.development">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -647,17 +600,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/wallets/wallet.metamask.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/wallets/wallet.native.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.development">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/wallets/wallet.fortmatic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        <state relative-caret-position="255">
+          <caret line="17" column="53" lean-forward="true" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/wallets/wallet.torus.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        <state relative-caret-position="69">
+          <caret line="21" column="48" lean-forward="true" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/utils/globals.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/wallets/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/wallets/wallet.interface.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/wallets/wallet.walletconnect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
         </state>
       </provider>
     </entry>
