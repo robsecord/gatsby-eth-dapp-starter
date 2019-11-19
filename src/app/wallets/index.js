@@ -1,5 +1,5 @@
 import { isEmpty } from 'lodash';
-import { GLOBALS } from '../globals';
+import { GLOBALS } from '../utils/globals';
 import CoinbaseWallet from './wallet.coinbase';
 import FortmaticWallet from './wallet.fortmatic';
 

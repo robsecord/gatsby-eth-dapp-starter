@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import { navigate } from 'gatsby';
 
 // Wallet Interface
-import Wallet from './utils/wallet';
+import Wallet from './wallets';
 
 // Data Store
 import { RootStoreContext } from './stores/root.store';

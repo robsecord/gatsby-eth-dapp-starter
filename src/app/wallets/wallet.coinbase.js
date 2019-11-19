@@ -4,7 +4,7 @@ import Web3 from 'web3';
 import * as _ from 'lodash';
 
 import IWalletBase from './wallet.interface';
-import { GLOBALS } from '../globals';
+import { GLOBALS } from '../utils/globals';
 
 class CoinbaseWallet extends IWalletBase {
     constructor(site, store) {

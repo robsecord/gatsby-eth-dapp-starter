@@ -6,7 +6,7 @@ import { navigate } from 'gatsby';
 import { GLOBALS } from './utils/globals';
 
 // Wallet Interface
-import Wallet from './utils/wallet';
+import Wallet from './wallets';
 
 // Login Route
 function Login() {

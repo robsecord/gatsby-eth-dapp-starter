@@ -14,7 +14,7 @@ import Main from './main';
 import Login from './login';
 
 // Wallet Interface
-import Wallet from './utils/wallet';
+import Wallet from './wallets';
 
 // Data Store
 import { RootStoreContext } from './stores/root.store';

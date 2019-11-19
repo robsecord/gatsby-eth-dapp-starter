@@ -3,7 +3,7 @@ import Fortmatic from 'fortmatic';
 import Web3 from 'web3';
 
 import IWalletBase from './wallet.interface';
-import { GLOBALS } from '../globals';
+import { GLOBALS } from '../utils/globals';
 
 class FortmaticWallet extends IWalletBase {
     constructor(site, store) {
