@@ -1,7 +1,7 @@
 // Frameworks
 import React from 'react';
-import {navigate} from 'gatsby';
-import {useStaticQuery, graphql} from 'gatsby';
+import { navigate } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 
 // Layout Components
 import Header from './header';

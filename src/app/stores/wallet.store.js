@@ -2,6 +2,7 @@ import { decorate, observable, computed } from 'mobx';
 import { isEmpty } from 'lodash';
 
 class WalletStore {
+    type = '';
     defaultAddress = '';
 
     constructor(rootStore) {
@@ -9,7 +10,6 @@ class WalletStore {
     }
 
     get hasAccount() {
-        console.log('hasAccount', !isEmpty(this.defaultAddress));
         return !isEmpty(this.defaultAddress)
     }
 }

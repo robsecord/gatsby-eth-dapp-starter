@@ -3,13 +3,12 @@ import WalletLink from 'walletlink';
 import Web3 from 'web3';
 import * as _ from 'lodash';
 
-class CoinbaseWallet {
-    constructor(site, walletStore) {
-        this.site = site;
-        this.walletStore = walletStore;
+import IWalletBase from './wallet.interface';
+import { GLOBALS } from '../globals';
 
-        this.web3 = null;
-        this.ethereum = null;
+class CoinbaseWallet extends IWalletBase {
+    constructor(site, store) {
+        super(GLOBALS.WALLET_TYPE_COINBASE, site, store);
     }
 
     init({rpcUrl, chainId}) {
@@ -25,24 +24,11 @@ class CoinbaseWallet {
         // Initialize a Web3 object
         this.web3 = new Web3(this.ethereum);
 
-        // Get Default Account if already Connected
-        this._changeUserAccount(this.web3.eth.accounts);
-        this._hookEvents();
-    }
-
-    async connect() {
-        const accounts = await this.ethereum.enable(); // send("eth_requestAccounts");
-        this._changeUserAccount(accounts);
+        // Initialize Base
+        super.init();
     }
 
     disconnect() {
-        // if (this.walletLink) {
-        //     this.walletLink.disconnect();
-        // }
-
-        // Clear Account
-        this.walletStore.defaultAddress = '';
-
         // Clear Local-Storage
         _.forEach([localStorage, sessionStorage], (store) => {
             _.forIn(store, (value, objKey) => {
@@ -51,18 +37,9 @@ class CoinbaseWallet {
                 }
             });
         });
-    }
 
-    _hookEvents() {
-        this.ethereum.on('accountsChanged', (accounts) => {
-            this._changeUserAccount(accounts);
-        });
-    }
-
-    _changeUserAccount(accounts = []) {
-        if (_.isEmpty(accounts)) { return; }
-        this.walletStore.defaultAddress = _.get(accounts, '0', '');
-        console.log(`User's address changed to "${this.walletStore.defaultAddress}".`);
+        // Disconnect Base
+        super.disconnect();
     }
 }
 

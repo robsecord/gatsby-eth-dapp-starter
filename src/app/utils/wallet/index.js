@@ -1,10 +1,13 @@
 import { isEmpty } from 'lodash';
+import { GLOBALS } from '../globals';
 import CoinbaseWallet from './wallet.coinbase';
+import FortmaticWallet from './wallet.fortmatic';
 
 class Wallet {
     constructor() {
         this.type = null;
-        this.autoConnect = true;
+        this.site = null;
+        this.store = null;
     }
 
     static instance() {
@@ -14,18 +17,25 @@ class Wallet {
         return Wallet.__instance;
     }
 
-    async init({type = 'coinbase', site, store}) {
+    async prepare({site, store}) {
+        this.site = site;
+        this.store = store;
+    }
+
+    async init(type = GLOBALS.WALLET_TYPE_COINBASE) {
+        if (isEmpty(this.site)) {
+            throw new Error('Error: Wallet has not been prepared before initializing!');
+        }
         if (type === this.type) { return; }
 
         this.type = type;
-        if (this.type === 'coinbase') {
-            this.wallet = new CoinbaseWallet(site, store);
+        if (this.type === GLOBALS.WALLET_TYPE_COINBASE) {
+            this.wallet = new CoinbaseWallet(this.site, this.store);
+        }
+        if (this.type === GLOBALS.WALLET_TYPE_FORTMATIC) {
+            this.wallet = new FortmaticWallet(this.site, this.store);
         }
         this.wallet.init(this._getEnv());
-
-        if (this.autoConnect) {
-            await this.connect();
-        }
     }
 
     async connect() {

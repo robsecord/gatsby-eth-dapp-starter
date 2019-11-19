@@ -1,7 +1,7 @@
 // Frameworks
 import React, { useContext }  from 'react';
-import {Router} from '@reach/router';
-import {useStaticQuery, graphql} from 'gatsby';
+import { Router } from '@reach/router';
+import { useStaticQuery, graphql } from 'gatsby';
 
 // Layout Management
 import PublicRoute from './components/PublicRoute';
@@ -33,10 +33,12 @@ const App = (props) => {
         }
     `);
 
+    // Prepare Wallet Interface
     const wallet = Wallet.instance();
-    wallet.init({store: rootStore.walletStore, site: siteData.site.siteMetadata})
+    wallet.prepare({store: rootStore.walletStore, site: siteData.site.siteMetadata})
         .catch(err => { console.log(err); });
 
+    // Primary App Layout + Router
     return (
         <Layout>
             <Router>

@@ -1,6 +1,6 @@
 // Frameworks
 import React, { useContext } from 'react';
-import {navigate} from 'gatsby';
+import { navigate } from 'gatsby';
 
 // Wallet Interface
 import Wallet from './utils/wallet';
@@ -14,8 +14,7 @@ function Main() {
     const { walletStore } = rootStore;
 
     const _logout = () => {
-        const wallet = Wallet.instance();
-        wallet.disconnect();
+        Wallet.instance().disconnect();
         navigate(`/app/login`);
     };
 
@@ -23,6 +22,7 @@ function Main() {
         <>
             <h1>Your Main App</h1>
             <ul>
+                <li>Wallet Type: {walletStore.type}</li>
                 <li>Wallet Address: {walletStore.defaultAddress}</li>
             </ul>
             <button onClick={_logout}>log out</button>
