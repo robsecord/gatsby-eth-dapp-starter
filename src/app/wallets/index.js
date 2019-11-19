@@ -2,6 +2,8 @@ import { isEmpty } from 'lodash';
 import { GLOBALS } from '../utils/globals';
 import CoinbaseWallet from './wallet.coinbase';
 import FortmaticWallet from './wallet.fortmatic';
+import MetamaskWallet from './wallet.metamask';
+
 
 class Wallet {
     constructor() {
@@ -22,19 +24,27 @@ class Wallet {
         this.store = store;
     }
 
+    static typeMap() {
+        return {
+            [GLOBALS.WALLET_TYPE_COINBASE]  : CoinbaseWallet,
+            [GLOBALS.WALLET_TYPE_FORTMATIC] : FortmaticWallet,
+            [GLOBALS.WALLET_TYPE_METAMASK]  : MetamaskWallet,
+        };
+    }
+
+    static isEnabled(type) {
+        return (Wallet.typeMap()[type]).isEnabled();
+    }
+
     async init(type = GLOBALS.WALLET_TYPE_COINBASE) {
         if (isEmpty(this.site)) {
             throw new Error('Error: Wallet has not been prepared before initializing!');
         }
         if (type === this.type) { return; }
-
         this.type = type;
-        if (this.type === GLOBALS.WALLET_TYPE_COINBASE) {
-            this.wallet = new CoinbaseWallet(this.site, this.store);
-        }
-        if (this.type === GLOBALS.WALLET_TYPE_FORTMATIC) {
-            this.wallet = new FortmaticWallet(this.site, this.store);
-        }
+
+        const walletClass = Wallet.typeMap()[type];
+        this.wallet = new walletClass(this.site, this.store);
         this.wallet.init(this._getEnv());
     }
 

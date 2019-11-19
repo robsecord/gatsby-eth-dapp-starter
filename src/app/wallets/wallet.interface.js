@@ -11,6 +11,10 @@ class IWalletBase {
         this.ethereum = null;
     }
 
+    static isEnabled() {
+        return true;
+    }
+
     init() {
         // Get Default Account if already Connected
         this.changeUserAccount(this.web3.eth.accounts);

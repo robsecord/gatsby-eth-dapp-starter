@@ -21,9 +21,6 @@ class FortmaticWallet extends IWalletBase {
         // Initialize a Web3 object
         this.web3 = new Web3(this.ethereum);
 
-        // Hook Custom Events
-        this.hookEvents();
-
         // Initialize Base
         super.init();
     }
@@ -36,10 +33,6 @@ class FortmaticWallet extends IWalletBase {
 
         // Disconnect Base
         super.disconnect();
-    }
-
-    hookEvents() {
-
     }
 }
 

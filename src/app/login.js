@@ -1,9 +1,7 @@
 // Frameworks
 import React from 'react';
 import { navigate } from 'gatsby';
-
-// Internals
-import { GLOBALS } from './utils/globals';
+import { map } from 'lodash';
 
 // Wallet Interface
 import Wallet from './wallets';
@@ -23,11 +21,19 @@ function Login() {
         }
     };
 
+    const walletButtons = map(Wallet.typeMap(), (wallet, walletType) => {
+        const disabled = !wallet.isEnabled();
+        return (
+            <p key={walletType}>
+                <button onClick={_walletConnect(walletType)} disabled={disabled}>{walletType}</button>
+            </p>
+        );
+    });
+
     return (
         <>
             <h1>Log in</h1>
-            <p><button onClick={_walletConnect(GLOBALS.WALLET_TYPE_COINBASE)}>Coinbase Walletlink</button></p>
-            <p><button onClick={_walletConnect(GLOBALS.WALLET_TYPE_FORTMATIC)}>Fortmatic</button></p>
+            {walletButtons}
         </>
     )
 }

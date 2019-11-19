@@ -1,5 +1,5 @@
 module.exports = {
-    siteTitle: 'Ethereum Dapp Starter',
+    siteTitle: 'Gatsby Ethereum Dapp Starter',
     siteDesc: 'Gatsby v2 Starter for Ethereum Dapps using Web3 with various Account Management options',
     siteAuthor: 'Rob Secord (robsecord.eth)',
     siteLogoUrl: '',
@@ -13,7 +13,6 @@ module.exports = {
     manifestIcon: 'src/images/gatsby-icon.png',
 
     // This path is subpath of your hosting https://your.domain/gatsby-eth-dapp-starter/
-    //   otherwise, leave empty or commented out.
     // pathPrefix: `/gatsby-eth-dapp-starter/`,
     pathPrefix: '/',
 

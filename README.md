@@ -5,7 +5,7 @@
 
 - Coinbase WalletLink -- **Done**
 - Fortmatic -- **Done**
-- ~~Metamask~~ -- _todo_
+- Metamask -- **Done**
 - ~~Torus~~ -- _todo_
 - ~~Wallet Connect~~ -- _todo_
 - ~~Arkane Network~~ -- _todo_
@@ -27,13 +27,13 @@ To start, create the following files in the root directory of the project:
 
 **_.env.development_**
 
-    GATSBY_ETH_JSONRPC_URL=https://mainnet.infura.io/v3/__YOUR_INFURA_API_KEY_HERE__
+    GATSBY_ETH_JSONRPC_URL=https://ropsten.infura.io/v3/__YOUR_INFURA_API_KEY_HERE__
     GATSBY_ETH_CHAIN_ID=3
     GATSBY_FORTMATIC_APIKEY=__YOUR_FORTMATIC_API_KEY_HERE__
 
 **_.env.production_**
 
-    GATSBY_ETH_JSONRPC_URL=https://mainnet.infura.io/v3/__YOUR_API_KEY_HERE__
+    GATSBY_ETH_JSONRPC_URL=https://mainnet.infura.io/v3/__YOUR_INFURA_API_KEY_HERE__
     GATSBY_ETH_CHAIN_ID=1
     GATSBY_FORTMATIC_APIKEY=__YOUR_FORTMATIC_API_KEY_HERE__
 
