@@ -1,7 +1,7 @@
 // Frameworks
 import React from 'react';
 import { navigate } from 'gatsby';
-import { map } from 'lodash';
+import * as _ from 'lodash';
 
 // Wallet Interface
 import Wallet from './wallets';
@@ -21,7 +21,7 @@ function Login() {
         }
     };
 
-    const walletButtons = map(Wallet.typeMap(), (wallet, walletType) => {
+    const walletButtons = _.map(Wallet.typeMap(), (wallet, walletType) => {
         const disabled = !wallet.isEnabled();
         return (
             <p key={walletType}>

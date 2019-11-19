@@ -15,7 +15,7 @@ class MetamaskWallet extends IWalletBase {
         return (isModern || isLegacy) && window.web3.currentProvider.isMetaMask;
     }
 
-    init({rpcUrl, chainId}) {
+    async init({rpcUrl, chainId}) {
         // Detect Injected Web3
         if (!MetamaskWallet.isEnabled()) {
             throw new Error('Error: MetaMask is not installed on this browser!');
@@ -28,7 +28,7 @@ class MetamaskWallet extends IWalletBase {
         this.web3 = new Web3(this.ethereum);
 
         // Initialize Base
-        super.init();
+        await super.init();
     }
 }
 

@@ -11,7 +11,7 @@ class CoinbaseWallet extends IWalletBase {
         super(GLOBALS.WALLET_TYPE_COINBASE, site, store);
     }
 
-    init({rpcUrl, chainId}) {
+    async init({rpcUrl, chainId}) {
         // Initialize WalletLink
         this.walletLink = new WalletLink({
             appName: this.site.title,
@@ -25,10 +25,10 @@ class CoinbaseWallet extends IWalletBase {
         this.web3 = new Web3(this.ethereum);
 
         // Initialize Base
-        super.init();
+        await super.init();
     }
 
-    disconnect() {
+    async disconnect() {
         // Clear Local-Storage
         _.forEach([localStorage, sessionStorage], (store) => {
             _.forIn(store, (value, objKey) => {
@@ -39,7 +39,7 @@ class CoinbaseWallet extends IWalletBase {
         });
 
         // Disconnect Base
-        super.disconnect();
+        await super.disconnect();
     }
 }
 

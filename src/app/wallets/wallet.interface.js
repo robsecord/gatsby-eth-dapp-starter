@@ -15,7 +15,7 @@ class IWalletBase {
         return true;
     }
 
-    init() {
+    async init() {
         // Get Default Account if already Connected
         this.changeUserAccount(this.web3.eth.accounts);
         this._hookCommonEvents();
@@ -27,7 +27,7 @@ class IWalletBase {
         this.changeUserAccount(accounts);
     }
 
-    disconnect() {
+    async disconnect() {
         // Clear Account
         this.store.type = '';
         this.store.defaultAddress = '';
@@ -44,7 +44,7 @@ class IWalletBase {
         if (chainId === '1') { return 'mainnet'; }
         if (chainId === '3') { return 'ropsten'; }
         if (chainId === '42') { return 'kovan'; }
-        return 'dev-5777'; // Local Ganache
+        return 'localhost';
     }
 
     _hookCommonEvents() {

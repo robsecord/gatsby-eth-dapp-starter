@@ -15,7 +15,7 @@ class NativeWallet extends IWalletBase {
         return (isModern || isLegacy) && !window.web3.currentProvider.isMetaMask;
     }
 
-    init({rpcUrl, chainId}) {
+    async init({rpcUrl, chainId}) {
         // Detect Injected Web3
         if (!NativeWallet.isEnabled()) {
             throw new Error('Error: Web3 is not installed on this browser!');
@@ -28,7 +28,7 @@ class NativeWallet extends IWalletBase {
         this.web3 = new Web3(this.ethereum);
 
         // Initialize Base
-        super.init();
+        await super.init();
     }
 }
 

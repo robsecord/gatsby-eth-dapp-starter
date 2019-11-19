@@ -1,5 +1,5 @@
 import { decorate, observable, computed } from 'mobx';
-import { isEmpty } from 'lodash';
+import * as _ from 'lodash';
 
 class WalletStore {
     type = '';
@@ -10,7 +10,7 @@ class WalletStore {
     }
 
     get hasAccount() {
-        return !isEmpty(this.defaultAddress)
+        return !_.isEmpty(this.defaultAddress)
     }
 }
 decorate(WalletStore, {

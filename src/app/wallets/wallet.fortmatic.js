@@ -10,9 +10,10 @@ class FortmaticWallet extends IWalletBase {
         super(GLOBALS.WALLET_TYPE_FORTMATIC, site, store);
     }
 
-    init({rpcUrl, chainId}) {
-        // Initialize Fortmatic
+    async init({rpcUrl, chainId}) {
         const chainName = this.getChainName(chainId);
+
+        // Initialize Fortmatic
         this.fortmatic = new Fortmatic(process.env.GATSBY_FORTMATIC_APIKEY, chainName);
 
         // Initialize a Web3 Provider object
@@ -22,17 +23,17 @@ class FortmaticWallet extends IWalletBase {
         this.web3 = new Web3(this.ethereum);
 
         // Initialize Base
-        super.init();
+        await super.init();
     }
 
-    disconnect() {
+    async disconnect() {
         // Disconnect Fortmatic
         if (this.fortmatic) {
             this.fortmatic.user.logout();
         }
 
         // Disconnect Base
-        super.disconnect();
+        await super.disconnect();
     }
 }
 

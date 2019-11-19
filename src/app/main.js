@@ -13,8 +13,8 @@ function Main() {
     const rootStore = useContext(RootStoreContext);
     const { walletStore } = rootStore;
 
-    const _logout = () => {
-        Wallet.instance().disconnect();
+    const _logout = async () => {
+        await Wallet.instance().disconnect();
         navigate(`/app/login`);
     };
 
