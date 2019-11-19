@@ -1,0 +1,58 @@
+{
+  "name": "gatsby-eth-dapp-starter",
+  "description": "Gatsby v2 Starter for Ethereum Dapps using Web3 with various Account Management options",
+  "version": "1.0.0",
+  "author": "Rob Secord <robsecord.eth>",
+  "keywords": [
+    "gatsby",
+    "web3",
+    "ethereum",
+    "dapp",
+    "coinbase"
+  ],
+  "dependencies": {
+    "@reach/dialog": "^0.2.9",
+    "@reach/tabs": "^0.1.6",
+    "@reach/visually-hidden": "^0.1.4",
+    "gatsby": "^2.15.11",
+    "gatsby-image": "^2.2.17",
+    "gatsby-plugin-create-client-paths": "^2.1.6",
+    "gatsby-plugin-lodash": "^3.1.15",
+    "gatsby-plugin-manifest": "^2.2.29",
+    "gatsby-plugin-offline": "^2.2.10",
+    "gatsby-plugin-react-helmet": "^3.1.6",
+    "gatsby-plugin-sharp": "^2.2.20",
+    "gatsby-source-filesystem": "^2.1.21",
+    "gatsby-transformer-sharp": "^2.2.13",
+    "lodash": "^4.17.15",
+    "mobx": "^5.15.0",
+    "mobx-react-lite": "^1.5.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
+    "walletlink": "^1.0.0",
+    "web3": "^1.2.4"
+  },
+  "devDependencies": {
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "prettier": "^1.18.2",
+    "rimraf": "^3.0.0"
+  },
+  "scripts": {
+    "start": "npm run develop",
+    "develop": "gatsby develop",
+    "build": "npm run clean && gatsby build",
+    "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public",
+    "serve": "gatsby serve",
+    "clean": "rimraf .cache public",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robsecord/gatsby-eth-dapp-starter"
+  },
+  "bugs": {
+    "url": "https://github.com/robsecord/gatsby-eth-dapp-starter/issues"
+  }
+}
