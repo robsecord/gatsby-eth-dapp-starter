@@ -7,10 +7,12 @@
 - Fortmatic -- **Done**
 - Metamask -- **Done**
 - Torus -- **Done**
-- Native (Toshi, Cipher, Status, etc..) -- **Partially Done**
 - Wallet Connect -- **Done**
+- ~~Portis~~ -- _todo_
+- ~~Uport~~ -- _todo_
 - ~~Arkane Network~~ -- _todo_
-- ~~Ledger/Trezor~~ -- _todo_
+- ~~Hardware (Ledger/Trezor)~~ -- _todo_
+- Native (Brave, Opera, Toshi, Cipher, Status, etc..) -- **Partially Done**
 
 
 #### **Blockchain Event Streaming & Notifications:**

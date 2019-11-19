@@ -27,7 +27,7 @@ class WalletConnectWallet extends IWalletBase {
         // display QR Code modal
         const uri = this.walletConnector.uri;
         WalletConnectQRCodeModal.open(uri, () => {
-            console.log('QR Code Modal closed');
+            // console.log('QR Code Modal closed');
         });
 
         this.hookCustomEvents();
