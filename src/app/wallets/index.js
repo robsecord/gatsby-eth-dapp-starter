@@ -5,12 +5,13 @@ import * as _ from 'lodash';
 import { GLOBALS } from '../utils/globals';
 
 // Wallets
-import CoinbaseWallet from './wallet.coinbase';
-import FortmaticWallet from './wallet.fortmatic';
-import TorusWallet from './wallet.torus';
-import WalletConnectWallet from './wallet.walletconnect';
-import MetamaskWallet from './wallet.metamask';
-import NativeWallet from './wallet.native';
+import CoinbaseWallet from './coinbase';
+import FortmaticWallet from './fortmatic';
+import TorusWallet from './torus';
+import PortisWallet from './portis';
+import WalletConnectWallet from './walletconnect';
+import MetamaskWallet from './metamask';
+import NativeWallet from './native';
 
 
 class Wallet {
@@ -61,6 +62,7 @@ class Wallet {
             [GLOBALS.WALLET_TYPE_COINBASE]      : CoinbaseWallet,
             [GLOBALS.WALLET_TYPE_FORTMATIC]     : FortmaticWallet,
             [GLOBALS.WALLET_TYPE_TORUS]         : TorusWallet,
+            [GLOBALS.WALLET_TYPE_PORTIS]        : PortisWallet,
             [GLOBALS.WALLET_TYPE_WALLETCONNECT] : WalletConnectWallet,
             [GLOBALS.WALLET_TYPE_METAMASK]      : MetamaskWallet,
             [GLOBALS.WALLET_TYPE_NATIVE]        : NativeWallet,

@@ -8,8 +8,9 @@
 - Metamask -- **Done**
 - Torus -- **Done**
 - Wallet Connect -- **Done**
-- ~~Portis~~ -- _todo_
+- Portis -- **Done**
 - ~~Uport~~ -- _todo_
+- ~~Authereum~~ -- _todo_
 - ~~Arkane Network~~ -- _todo_
 - ~~Hardware (Ledger/Trezor)~~ -- _todo_
 - Native (Brave, Opera, Toshi, Cipher, Status, etc..) -- **Partially Done**
@@ -33,12 +34,14 @@ To start, create the following files in the root directory of the project:
     GATSBY_ETH_JSONRPC_URL=https://ropsten.infura.io/v3/__YOUR_INFURA_API_KEY_HERE__
     GATSBY_ETH_CHAIN_ID=3
     GATSBY_FORTMATIC_APIKEY=__YOUR_FORTMATIC_API_KEY_HERE__
+    GATSBY_PORTIS_DAPP_ID=__YOUR_PORTIS_DAPP_ID_HERE__
 
 **_.env.production_**
 
     GATSBY_ETH_JSONRPC_URL=https://mainnet.infura.io/v3/__YOUR_INFURA_API_KEY_HERE__
     GATSBY_ETH_CHAIN_ID=1
     GATSBY_FORTMATIC_APIKEY=__YOUR_FORTMATIC_API_KEY_HERE__
+    GATSBY_PORTIS_DAPP_ID=__YOUR_PORTIS_DAPP_ID_HERE__
 
 
 Next, run the following commands from a terminal:

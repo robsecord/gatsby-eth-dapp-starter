@@ -1,7 +1,7 @@
 // Frameworks
 import Web3 from 'web3';
 
-import IWalletBase from './wallet.interface';
+import IWalletBase from './base';
 import { GLOBALS } from '../utils/globals';
 
 class NativeWallet extends IWalletBase {

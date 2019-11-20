@@ -2,7 +2,7 @@
 import Torus from "@toruslabs/torus-embed";
 import Web3 from 'web3';
 
-import IWalletBase from './wallet.interface';
+import IWalletBase from './base';
 import { GLOBALS } from '../utils/globals';
 
 class TorusWallet extends IWalletBase {
@@ -31,10 +31,11 @@ class TorusWallet extends IWalletBase {
     }
 
     async connect() {
-        await this.torus.login();
-        // await this.torus.ethereum.enable();
+        // await this.torus.login();
         this.ethereum = this.torus.provider;
         this.web3 = new Web3(this.ethereum);
+
+        await this.torus.ethereum.enable();
 
         await super.connect();
     }

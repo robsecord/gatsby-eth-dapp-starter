@@ -3,7 +3,7 @@ import WalletLink from 'walletlink';
 import Web3 from 'web3';
 import * as _ from 'lodash';
 
-import IWalletBase from './wallet.interface';
+import IWalletBase from './base';
 import { GLOBALS } from '../utils/globals';
 
 class CoinbaseWallet extends IWalletBase {

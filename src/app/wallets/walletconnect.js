@@ -2,7 +2,7 @@
 import WalletConnect from "@walletconnect/browser";
 import WalletConnectQRCodeModal from "@walletconnect/qrcode-modal";
 
-import IWalletBase from './wallet.interface';
+import IWalletBase from './base';
 import { GLOBALS } from '../utils/globals';
 
 class WalletConnectWallet extends IWalletBase {
