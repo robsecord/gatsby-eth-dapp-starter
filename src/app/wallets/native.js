@@ -22,10 +22,10 @@ class NativeWallet extends IWalletBase {
         }
 
         // Initialize a Web3 Provider object
-        this.ethereum = window.ethereum || window.web3.currentProvider;
+        this.provider = window.ethereum || window.web3.currentProvider;
 
         // Initialize a Web3 object
-        this.web3 = new Web3(this.ethereum);
+        this.web3 = new Web3(this.provider);
 
         // Initialize Base
         await super.init();

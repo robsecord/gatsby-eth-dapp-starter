@@ -8,7 +8,7 @@ class IWalletBase {
         this.store = store;
 
         this.web3 = null;
-        this.ethereum = null;
+        this.provider = null;
     }
 
     static isEnabled() {
@@ -22,7 +22,8 @@ class IWalletBase {
     }
 
     async connect() {
-        // const accounts = await this.ethereum.enable(); // send("eth_requestAccounts");
+        // const accounts = await this.provider.enable(); // send("eth_requestAccounts");
+        // this.web3.eth.getCoinbase((error, address) => { ... });
         const accounts = await this.web3.currentProvider.enable(); // send("eth_requestAccounts");
         this.changeUserAccount(accounts);
     }
@@ -49,8 +50,8 @@ class IWalletBase {
 
     _hookCommonEvents() {
         const _changeAccount = (accts) => this.changeUserAccount(accts);
-        if (_.isFunction(_.get(this.ethereum, 'on'))) {
-            this.ethereum.on('accountsChanged', _changeAccount);
+        if (_.isFunction(_.get(this.provider, 'on'))) {
+            this.provider.on('accountsChanged', _changeAccount);
         }
         else if (_.isFunction(_.get(this.web3, 'currentProvider.on'))) {
             this.web3.currentProvider.on('accountsChanged', _changeAccount);

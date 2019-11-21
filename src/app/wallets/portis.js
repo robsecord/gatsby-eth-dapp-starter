@@ -15,10 +15,10 @@ class PortisWallet extends IWalletBase {
         this.portis = new Portis(process.env.GATSBY_PORTIS_DAPP_ID, 'mainnet');
 
         // Initialize a Web3 Provider object
-        this.ethereum = this.portis.provider;
+        this.provider = this.portis.provider;
 
         // Initialize a Web3 object
-        this.web3 = new Web3(this.ethereum);
+        this.web3 = new Web3(this.provider);
 
         this.hookCustomEvents();
 

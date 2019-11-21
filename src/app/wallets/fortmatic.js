@@ -15,10 +15,10 @@ class FortmaticWallet extends IWalletBase {
         this.fortmatic = new Fortmatic(process.env.GATSBY_FORTMATIC_APIKEY);
 
         // Initialize a Web3 Provider object
-        this.ethereum = this.fortmatic.getProvider();
+        this.provider = this.fortmatic.getProvider();
 
         // Initialize a Web3 object
-        this.web3 = new Web3(this.ethereum);
+        this.web3 = new Web3(this.provider);
 
         // Initialize Base
         await super.init();

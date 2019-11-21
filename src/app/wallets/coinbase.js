@@ -19,10 +19,10 @@ class CoinbaseWallet extends IWalletBase {
         });
 
         // Initialize a Web3 Provider object
-        this.ethereum = this.walletLink.makeWeb3Provider(rpcUrl, chainId);
+        this.provider = this.walletLink.makeWeb3Provider(rpcUrl, chainId);
 
         // Initialize a Web3 object
-        this.web3 = new Web3(this.ethereum);
+        this.web3 = new Web3(this.provider);
 
         // Initialize Base
         await super.init();

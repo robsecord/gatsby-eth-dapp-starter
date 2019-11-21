@@ -2,11 +2,11 @@ module.exports = {
     siteTitle: 'Gatsby Ethereum Dapp Starter',
     siteDesc: 'Gatsby v2 Starter for Ethereum Dapps using Web3 with various Account Management options',
     siteAuthor: 'Rob Secord (robsecord.eth)',
-    siteLogoUrl: '',
+    siteLogoUrl: 'src/images/gatsby-icon.png',
 
     manifestName: 'Ethereum Dapp',
     manifestShortName: 'EthDapp', // max 12 characters
-    manifestStartUrl: '/',
+    manifestStartUrl: 'https://gatsby-eth-dapp.runkodapps.com/',
     manifestBackgroundColor: '#663399',
     manifestThemeColor: '#663399',
     manifestDisplay: 'standalone',

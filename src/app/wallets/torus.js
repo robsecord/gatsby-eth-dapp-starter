@@ -32,8 +32,8 @@ class TorusWallet extends IWalletBase {
 
     async connect() {
         // await this.torus.login();
-        this.ethereum = this.torus.provider;
-        this.web3 = new Web3(this.ethereum);
+        this.provider = this.torus.provider;
+        this.web3 = new Web3(this.provider);
 
         await this.torus.ethereum.enable();
 

@@ -21,11 +21,11 @@ function Login() {
         }
     };
 
-    const walletButtons = _.map(Wallet.typeMap(), (wallet, walletType) => {
-        const disabled = !wallet.isEnabled();
+    const walletButtons = _.map(Wallet.typeMap(), (walletData, walletType) => {
+        const disabled = !Wallet.isEnabled(walletType);
         return (
             <p key={walletType}>
-                <button onClick={_walletConnect(walletType)} disabled={disabled}>{walletType}</button>
+                <button onClick={_walletConnect(walletType)} disabled={disabled}>{walletData.name}</button>
             </p>
         );
     });
