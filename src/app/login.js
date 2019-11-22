@@ -1,5 +1,6 @@
 // Frameworks
 import React from 'react';
+import { Heading, Button, Box } from 'rimble-ui';
 import { navigate } from 'gatsby';
 import * as _ from 'lodash';
 
@@ -24,16 +25,18 @@ function Login() {
     const walletButtons = _.map(Wallet.typeMap(), (walletData, walletType) => {
         const disabled = !Wallet.isEnabled(walletType);
         return (
-            <p key={walletType}>
-                <button onClick={_walletConnect(walletType)} disabled={disabled}>{walletData.name}</button>
-            </p>
+            <Box key={walletType} mb={2}>
+                <Button size="small" onClick={_walletConnect(walletType)} disabled={disabled}>{walletData.name}</Button>
+            </Box>
         );
     });
 
     return (
         <>
-            <h1>Log in</h1>
-            {walletButtons}
+            <Box mb={4}>
+                <Heading as={"h3"} mb={3}>Log in</Heading>
+                {walletButtons}
+            </Box>
         </>
     )
 }

@@ -1,6 +1,7 @@
 // Frameworks
 import React, { useContext } from 'react';
 import { navigate } from 'gatsby';
+import { Heading, Blockie, EthAddress, Button, Text, Box } from 'rimble-ui';
 
 // Wallet Interface
 import Wallet from './wallets';
@@ -20,12 +21,32 @@ function Main() {
 
     return (
         <>
-            <h1>Your Main App</h1>
-            <ul>
-                <li>Wallet Type: {walletStore.type}</li>
-                <li>Wallet Address: {walletStore.defaultAddress}</li>
-            </ul>
-            <button onClick={_logout}>log out</button>
+            <Heading as={"h3"}>
+                <Blockie
+                    opts={{
+                        seed: walletStore.defaultAddress,
+                        color: `#${walletStore.defaultAddress.slice(2, 8)}`,
+                        bgcolor: `#${walletStore.defaultAddress.slice(-6)}`,
+                        size: 15,
+                        scale: 3,
+                        spotcolor: '#000'
+                    }}
+                />
+                &nbsp;&nbsp;Main App
+                &nbsp;&nbsp;<small>(using {Wallet.getName(walletStore.type)})</small>
+            </Heading>
+
+            <Box mt={20}>
+                <Text>
+                    <EthAddress address={walletStore.defaultAddress} />
+                </Text>
+            </Box>
+
+            <Box mt={40}>
+                <Text.p>
+                    <Button onClick={_logout}>log out</Button>
+                </Text.p>
+            </Box>
         </>
     );
 }

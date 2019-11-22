@@ -56,11 +56,17 @@ class Wallet {
     }
 
     async connect() {
+        if (!this.wallet) { return; }
         await this.wallet.connect();
     }
 
     async disconnect() {
+        if (!this.wallet) { return; }
         await this.wallet.disconnect();
+    }
+
+    static getName(type) {
+        return (Wallet.typeMap()[type]).name || 'Unknown';
     }
 
     static typeMap() {
