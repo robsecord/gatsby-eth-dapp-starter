@@ -1,9 +1,26 @@
 # gatsby-eth-dapp-starter
 ### **Gatsby v2** Starter for **Ethereum Dapps** using **React** & **Web3**!
 
+![GitHub package.json dynamic](https://img.shields.io/github/package-json/version/robsecord/gatsby-eth-dapp-starter)
+
+![GitHub package.json dynamic](https://img.shields.io/github/package-json/keywords/robsecord/gatsby-eth-dapp-starter)
+
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/robsecord/gatsby-eth-dapp-starter)
+![GitHub repo size](https://img.shields.io/github/repo-size/robsecord/gatsby-eth-dapp-starter)
+
+![Maintenance](https://img.shields.io/maintenance/yes/2019)
+![GitHub last commit](https://img.shields.io/github/last-commit/robsecord/gatsby-eth-dapp-starter)
+
+
+#### **Demo:**
+https://brave-varahamihira-c2cb15.netlify.com/
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cd097e47-9299-46cd-9365-67c4047decc6/deploy-status)](https://app.netlify.com/sites/brave-varahamihira-c2cb15/deploys)
+
+
 #### **Account Management options:**
 
-- Connected Wallets
+- QR-Connected Wallets
     - Coinbase WalletLink
     - Wallet Connect
 
