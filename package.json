@@ -21,7 +21,7 @@
     "Ledger",
     "Trezor",
     "dFuse",
-    "Rimble",
+    "Rimble"
   ],
   "dependencies": {
     "@arkane-network/arkane-connect": "^1.11.0",
