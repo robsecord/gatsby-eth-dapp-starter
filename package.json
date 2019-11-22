@@ -27,6 +27,7 @@
     "gatsby-plugin-create-client-paths": "^2.1.17",
     "gatsby-plugin-lodash": "^3.1.15",
     "gatsby-plugin-manifest": "^2.2.29",
+    "gatsby-plugin-netlify": "^2.1.25",
     "gatsby-plugin-offline": "^2.2.10",
     "gatsby-plugin-react-helmet": "^3.1.15",
     "gatsby-plugin-sharp": "^2.3.2",
@@ -53,8 +54,7 @@
   "scripts": {
     "start": "npm run develop",
     "develop": "gatsby develop",
-    "build": "npm run clean && gatsby build",
-    "deploy": "npm run clean && gatsby build --prefix-paths",
+    "build": "npm run clean && gatsby build --prefix-paths",
     "serve": "gatsby serve",
     "clean": "rimraf .cache public",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\" && exit 1"
