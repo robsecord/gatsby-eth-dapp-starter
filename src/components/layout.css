@@ -620,3 +620,21 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.clean-list {
+  margin-top: 10px;
+}
+.clean-list li {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 0.9em;
+  font-weight: 700;
+  color: #555;
+}
+.clean-list li ul {
+  margin-top: 0;
+}
+.clean-list li ul li {
+  margin-bottom: 0;
+  font-size: 0.8em;
+}

@@ -18,7 +18,7 @@ https://brave-varahamihira-c2cb15.netlify.com/
 [![Netlify Status](https://api.netlify.com/api/v1/badges/cd097e47-9299-46cd-9365-67c4047decc6/deploy-status)](https://app.netlify.com/sites/brave-varahamihira-c2cb15/deploys)
 
 
-#### **Account Management options:**
+#### **Account Management Integrations:**
 
 - QR-Connected Wallets
     - Coinbase WalletLink
@@ -35,7 +35,7 @@ https://brave-varahamihira-c2cb15.netlify.com/
     - Arkane Network
     
 - Browser Wallets
-    - Metamask
+    - MetaMask
     - Native (Brave, Opera, Toshi, Cipher, Status, etc..) -- **Partially Done**
 
 - Hardware Wallets
@@ -48,6 +48,16 @@ https://brave-varahamihira-c2cb15.netlify.com/
 #### **Ethereum Design Components:**
 - Rimble UI
 
+#### **Gatsby Plugins:**
+- gatsby-plugin-react-helmet
+- gatsby-plugin-create-client-paths
+- gatsby-source-filesystem
+- gatsby-transformer-sharp
+- gatsby-plugin-sharp
+- gatsby-plugin-manifest
+- gatsby-plugin-lodash
+- gatsby-plugin-netlify
+- gatsby-plugin-offline      
 
 #### **Build Environment:**
 - node: 10.17.0

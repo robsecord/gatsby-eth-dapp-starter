@@ -1,7 +1,7 @@
 // Frameworks
 import React from 'react';
 import { ThemeProvider } from 'styled-components'
-import { theme } from 'rimble-ui'
+import { theme, Box } from 'rimble-ui'
 import { navigate, useStaticQuery, graphql } from 'gatsby';
 
 // Layout Components
@@ -40,9 +40,11 @@ const Layout = ({children}) => {
                 >
                     <main>{children}</main>
                     <footer>
-                        &copy; {new Date().getFullYear()}, Built with
-                        {` `}
-                        <a href="https://www.gatsbyjs.org">Gatsby</a>
+                        <Box mt={4}>
+                            &copy; {new Date().getFullYear()}, Built with
+                            {` `}
+                            <a href="https://www.gatsbyjs.org">Gatsby</a>
+                        </Box>
                     </footer>
                 </div>
             </ThemeProvider>

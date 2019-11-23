@@ -1,7 +1,7 @@
 // Frameworks
 import React from 'react';
 import { Heading, Button, Box } from 'rimble-ui';
-import { navigate } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 import * as _ from 'lodash';
 
 // Wallet Interface
@@ -36,6 +36,10 @@ function Login() {
             <Box mb={4}>
                 <Heading as={"h3"} mb={3}>Log in</Heading>
                 {walletButtons}
+            </Box>
+
+            <Box mt={3}>
+                <Link to="/">Go back to the homepage</Link>
             </Box>
         </>
     )
