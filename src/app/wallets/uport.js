@@ -11,8 +11,10 @@ class UportWallet extends IWalletBase {
     }
 
     async init({rpcUrl, chainId}) {
+        const chainName = this.getChainName(chainId);
+
         // Initialize Uport
-        this.uport = new Connect(process.env.GATSBY_UPORT_DAPP_NAME); // , {network: 'mainnet'});
+        this.uport = new Connect(process.env.GATSBY_UPORT_DAPP_NAME, {network: chainName});
 
         // Initialize a Web3 Provider object
         this.provider = this.uport.getProvider();

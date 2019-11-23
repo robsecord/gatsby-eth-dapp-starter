@@ -46,7 +46,7 @@ https://brave-varahamihira-c2cb15.netlify.com/
 - ~~dfuse.io~~ -- _todo_
 
 #### **Ethereum Design Components:**
-- ~~Rimble UI~~ -- _todo_
+- Rimble UI
 
 
 #### **Build Environment:**

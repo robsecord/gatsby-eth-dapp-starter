@@ -11,8 +11,10 @@ class PortisWallet extends IWalletBase {
     }
 
     async init({rpcUrl, chainId}) {
+        const chainName = this.getChainName(chainId);
+
         // Initialize Portis
-        this.portis = new Portis(process.env.GATSBY_PORTIS_DAPP_ID, 'mainnet');
+        this.portis = new Portis(process.env.GATSBY_PORTIS_DAPP_ID, chainName);
 
         // Initialize a Web3 Provider object
         this.provider = this.portis.provider;

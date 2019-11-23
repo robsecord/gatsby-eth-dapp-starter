@@ -19,7 +19,7 @@ const IndexPage = () => {
                         This site has statically generated marketing pages like this one
                         and <Link to="/page-2/">page 2.</Link>
                     </li>
-                    <li> It also has a dynamically generated client-side app guarded by authentication:
+                    <li> It also has a dynamically generated client-side app with Web3 Authentication:
                         <ul>
                             <li>
                                 <Link to="/app/">
