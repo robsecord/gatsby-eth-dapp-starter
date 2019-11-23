@@ -11,11 +11,13 @@
 ![Maintenance](https://img.shields.io/maintenance/yes/2019)
 ![GitHub last commit](https://img.shields.io/github/last-commit/robsecord/gatsby-eth-dapp-starter)
 
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/robsecord/gatsby-eth-dapp-starter/issues)
+
 
 #### **Demo:**
 https://brave-varahamihira-c2cb15.netlify.com/
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/cd097e47-9299-46cd-9365-67c4047decc6/deploy-status)](https://app.netlify.com/sites/brave-varahamihira-c2cb15/deploys)
+Hosted on [![Netlify Status](https://api.netlify.com/api/v1/badges/cd097e47-9299-46cd-9365-67c4047decc6/deploy-status)](https://app.netlify.com/sites/brave-varahamihira-c2cb15/deploys)
 
 
 #### **Account Management Integrations:**

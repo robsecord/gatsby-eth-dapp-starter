@@ -78,8 +78,8 @@ const IndexPage = () => {
                     <li>
                         Hardware Wallets
                         <ul>
-                            <li>Ledger</li>
-                            <li>Trezor</li>
+                            <li><del>Ledger</del> &nbsp; <mark>(todo)</mark></li>
+                            <li><del>Trezor</del> &nbsp; <mark>(todo)</mark></li>
                         </ul>
                     </li>
                 </ul>
@@ -93,7 +93,7 @@ const IndexPage = () => {
                     <li>
                         Event Streaming &amp; Notifications
                         <ul>
-                            <li>dfuse.io</li>
+                            <li><del>dfuse.io</del> &nbsp; <mark>(todo)</mark></li>
                         </ul>
                     </li>
                     <li>

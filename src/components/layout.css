@@ -638,3 +638,6 @@ pre tt:after {
   margin-bottom: 0;
   font-size: 0.8em;
 }
+del {
+  text-decoration: line-through;
+}
