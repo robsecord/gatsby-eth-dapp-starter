@@ -17,7 +17,7 @@
 #### **Demo:**
 https://gatsby-eth-dapp-starter.netlify.com/
 
-Hosted on [![Netlify Status](https://api.netlify.com/api/v1/badges/cd097e47-9299-46cd-9365-67c4047decc6/deploy-status)](https://app.netlify.com/sites/brave-varahamihira-c2cb15/deploys)
+Hosted on [![Netlify Status](https://api.netlify.com/api/v1/badges/cd097e47-9299-46cd-9365-67c4047decc6/deploy-status)](https://app.netlify.com/sites/gatsby-eth-dapp-starter/deploys)
 
 
 #### **Account Management Integrations:**
