@@ -72,7 +72,7 @@
     "serve": "gatsby serve",
     "clean": "rimraf .cache public",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\" && exit 0"
   },
   "repository": {
     "type": "git",

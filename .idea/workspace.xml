@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d80ab86-5c89-4003-b2b5-36e4c924ec65" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,11 +17,11 @@
     <splitter split-orientation="vertical" split-proportion="0.36256686">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/package.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-866">
-                  <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+                <state relative-caret-position="117">
+                  <caret line="74" column="80" lean-forward="true" selection-start-line="74" selection-start-column="80" selection-end-line="74" selection-end-column="80" />
                 </state>
               </provider>
             </entry>
@@ -64,7 +62,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/.env.development">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="165">
@@ -133,7 +131,7 @@
                   </provider>
                 </entry>
               </file>
-              <file pinned="false" current-in-tab="false">
+              <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/README.md">
                   <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                     <state split_layout="SPLIT">
@@ -141,15 +139,6 @@
                         <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
                       </first_editor>
                       <second_editor />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/notes.txt">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="240">
-                      <caret line="16" selection-start-line="16" selection-end-line="16" />
                     </state>
                   </provider>
                 </entry>
@@ -259,7 +248,6 @@
         <option value="$PROJECT_DIR$/gatsby-config.js" />
         <option value="$PROJECT_DIR$/src/app/wallets/blockstack.js" />
         <option value="$PROJECT_DIR$/src/app/utils/globals.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/app/wallets/index.js" />
         <option value="$PROJECT_DIR$/src/app/main.js" />
         <option value="$PROJECT_DIR$/src/app/wallets/uport.js" />
@@ -272,6 +260,7 @@
         <option value="$PROJECT_DIR$/.env.development" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/notes.txt" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -397,7 +386,7 @@
       <workItem from="1574305165527" duration="9004000" />
       <workItem from="1574354747914" duration="191000" />
       <workItem from="1574455897214" duration="15213000" />
-      <workItem from="1574538460438" duration="2298000" />
+      <workItem from="1574538460438" duration="2353000" />
     </task>
     <task id="LOCAL-00001" summary="Added MetaMask&#10;Minor updates and refactors">
       <created>1574140795624</created>
@@ -473,7 +462,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55373000" />
+    <option name="totallyTimeSpent" value="55428000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -797,13 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-866">
-          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env.development">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -825,6 +807,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/notes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -835,10 +824,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes.txt">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="117">
+          <caret line="74" column="80" lean-forward="true" selection-start-line="74" selection-start-column="80" selection-end-line="74" selection-end-column="80" />
         </state>
       </provider>
     </entry>
