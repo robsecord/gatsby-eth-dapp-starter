@@ -59,7 +59,8 @@
     "uport": "^0.7.0-alpha-13",
     "uport-connect": "^1.1.11",
     "walletlink": "^1.0.0",
-    "web3": "^1.2.4"
+    "web3": "^1.2.4",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "prettier": "^1.18.2",
@@ -72,7 +73,9 @@
     "serve": "gatsby serve",
     "clean": "rimraf .cache public",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\" && exit 0"
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\" && exit 0",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -80,5 +83,6 @@
   },
   "bugs": {
     "url": "https://github.com/robsecord/gatsby-eth-dapp-starter/issues"
-  }
+  },
+  "snyk": true
 }
