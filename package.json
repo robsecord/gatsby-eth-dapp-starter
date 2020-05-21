@@ -59,7 +59,7 @@
     "uport": "^0.7.0-alpha-13",
     "uport-connect": "^1.1.11",
     "walletlink": "^1.0.0",
-    "web3": "^1.2.4"
+    "web3": "^1.2.8"
   },
   "devDependencies": {
     "prettier": "^1.18.2",
