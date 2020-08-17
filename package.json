@@ -46,7 +46,7 @@
     "gatsby-plugin-sharp": "^2.3.2",
     "gatsby-source-filesystem": "^2.1.38",
     "gatsby-transformer-sharp": "^2.3.5",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.20",
     "mobx": "^5.15.0",
     "mobx-react-lite": "^1.5.1",
     "prop-types": "^15.7.2",
