@@ -25,14 +25,14 @@
   ],
   "dependencies": {
     "@arkane-network/arkane-connect": "^1.11.0",
-    "@portis/web3": "^2.0.0-beta.54",
+    "@portis/web3": "^3.0.0",
     "@reach/dialog": "^0.2.9",
     "@reach/tabs": "^0.1.6",
     "@reach/visually-hidden": "^0.1.4",
     "@toruslabs/torus-embed": "^0.2.6",
     "@walletconnect/browser": "^1.0.0-beta.39",
     "@walletconnect/qrcode-modal": "^1.0.0-beta.39",
-    "authereum": "^0.0.4-beta.47",
+    "authereum": "^0.1.0",
     "bitski": "^0.10.6",
     "fortmatic": "^1.0.0",
     "gatsby": "^2.18.10",
@@ -59,7 +59,7 @@
     "uport": "^0.7.0-alpha-13",
     "uport-connect": "^1.1.11",
     "walletlink": "^1.0.0",
-    "web3": "^1.2.4"
+    "web3": "^1.2.8"
   },
   "devDependencies": {
     "prettier": "^1.18.2",
