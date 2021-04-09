@@ -32,7 +32,7 @@
     "@toruslabs/torus-embed": "^0.2.6",
     "@walletconnect/browser": "^1.0.0-beta.39",
     "@walletconnect/qrcode-modal": "^1.0.0-beta.39",
-    "authereum": "^0.0.4-beta.47",
+    "authereum": "^0.1.0",
     "bitski": "^0.10.6",
     "fortmatic": "^1.0.0",
     "gatsby": "^2.18.10",
