@@ -1475,22 +1475,6 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@bitski/provider-engine@^0.6.3":
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/@bitski/provider-engine/-/provider-engine-0.6.3.tgz#92f764ba11acf01243be518c65ba15d080d692bc"
-  integrity sha512-ARz2Dn/w0gA4XDL31GPzbPFn/SFhhCFpTQCjKW0IJvV/MyhmHtE2n+TJ9iWVEjtn2rkWsCJDMlbDwDsdXAgL7Q==
-  dependencies:
-    async "3.0.1"
-    bn.js "^4.11.8"
-    clone "^2.0.0"
-    cross-fetch "^2.1.0"
-    eth-block-tracker "^4.4.1"
-    ethjs-util "^0.1.6"
-    json-rpc-error "^2.0.0"
-    json-stable-stringify "^1.0.1"
-    promise-to-callback "^1.0.0"
-    xtend "^4.0.1"
-
 "@d8660091/react-popper@^1.0.4":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@d8660091/react-popper/-/react-popper-1.0.4.tgz#d924bec253b756f13b155bb15a25e13190509578"
@@ -3047,11 +3031,6 @@ async@1.5.2, async@^1.4.2:
   resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
   integrity sha1-7GphrlZIDAw8skHJVhjiCJL5Zyo=
 
-async@3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/async/-/async-3.0.1.tgz#dfeb34657d1e63c94c0eee424297bf8a2c9a8182"
-  integrity sha512-ZswD8vwPtmBZzbn9xyi8XBQWXH3AvOQ43Za1KWYq7JeycrZuUYzx01KvHcVbXltjqH4y0MWrQ33008uLTqXuDw==
-
 async@^2.0.1, async@^2.1.2, async@^2.4.0, async@^2.5.0, async@^2.6.0, async@^2.6.2, async@^2.6.3:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/async/-/async-2.6.3.tgz#d72625e2344a3656e3a3ad4fa749fa83299d82ff"
@@ -4003,25 +3982,22 @@ bip66@^1.1.5:
   dependencies:
     safe-buffer "^5.0.1"
 
-bitski-provider@^0.10.6:
-  version "0.10.6"
-  resolved "https://registry.yarnpkg.com/bitski-provider/-/bitski-provider-0.10.6.tgz#4bdf96ad4f60dbaffa07dbae142431a21a8b5f61"
-  integrity sha512-Oz7pqvivZbRhAeNYnOBtuB0lESVnmnsbL43okJnHSoBxnckbifpyENcvHdiCl98kWjLdR/EIYl9ZEHY7R3NMWQ==
+bitski-provider@^0.15.0:
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/bitski-provider/-/bitski-provider-0.15.0.tgz#f396174f4567c2ca097c09f345af11bb27d36ba6"
+  integrity sha512-Rf84deS1qSey+msp/aqaMjxEQWNzlFRiJAiJPi8uP9+V1hoWIvQP/Bcu/g81BA3vedI+RH3tUeMzouGFYHT1ww==
   dependencies:
-    "@bitski/provider-engine" "^0.6.3"
-    async "3.0.1"
     bn.js "^4.11.8"
     json-rpc-error "^2.0.0"
 
-bitski@^0.10.6:
-  version "0.10.6"
-  resolved "https://registry.yarnpkg.com/bitski/-/bitski-0.10.6.tgz#a106065af0afbe74c3e2cdead794d281f093004d"
-  integrity sha512-dNeY0bS/xjoCm1cy6SpequyC8aHPE5DJPAoFcSmBKpXpVlT34F/uLYCLtK2RjTNrsrOI1G77S/JkX53ljsq5+Q==
+bitski@^0.15.0:
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/bitski/-/bitski-0.15.0.tgz#654e293b40951ee0e203c880f968a8b6afc1f550"
+  integrity sha512-w4w9MCUbvK/PgtC6D+MoY2uTxt7m5S7IzCElB1vZs0gkFAkgJjfSsDJ2ACyZONHVI5Wwh/7QsJcfwULYHXxOOQ==
   dependencies:
-    "@bitski/provider-engine" "^0.6.3"
     "@openid/appauth" "^1.2.6"
-    bitski-provider "^0.10.6"
-    uuid "^3.3.3"
+    bitski-provider "^0.15.0"
+    uuid "^8.0.0"
 
 bl@^1.0.0:
   version "1.2.2"
@@ -7185,7 +7161,7 @@ ethjs-util@0.1.3:
     is-hex-prefixed "1.0.0"
     strip-hex-prefix "1.0.0"
 
-ethjs-util@0.1.6, ethjs-util@^0.1.3, ethjs-util@^0.1.6:
+ethjs-util@0.1.6, ethjs-util@^0.1.3:
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/ethjs-util/-/ethjs-util-0.1.6.tgz#f308b62f185f9fe6237132fb2a9818866a5cd536"
   integrity sha512-CUnVOQq7gSpDHZVVrQW8ExxUETWrnrvXYvYz55wOU8Uj4VCgw56XC2B/fVqQN+f7gmrnRHSLVnFAwsCuNwji8w==
@@ -16267,6 +16243,11 @@ uuid@3.3.3, uuid@^3.0.0, uuid@^3.0.1, uuid@^3.3.2, uuid@^3.3.3:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.3.tgz#4568f0216e78760ee1dbf3a4d2cf53e224112866"
   integrity sha512-pW0No1RGHgzlpHJO1nsVrHKpOEIxkGg1xB+v0ZmdNH5OAeAwzAVrCnI2/6Mtx+Uys6iaylxa+D3g4j63IKKjSQ==
+
+uuid@^8.0.0:
+  version "8.3.2"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
+  integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
 v8-compile-cache@^1.1.2:
   version "1.1.2"

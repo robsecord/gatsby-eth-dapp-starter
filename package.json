@@ -33,7 +33,7 @@
     "@walletconnect/browser": "^1.0.0-beta.39",
     "@walletconnect/qrcode-modal": "^1.0.0-beta.39",
     "authereum": "^0.0.4-beta.47",
-    "bitski": "^0.10.6",
+    "bitski": "^0.15.0",
     "fortmatic": "^1.0.0",
     "gatsby": "^2.18.10",
     "gatsby-image": "^2.2.17",
