@@ -29,7 +29,7 @@
     "@reach/dialog": "^0.2.9",
     "@reach/tabs": "^0.1.6",
     "@reach/visually-hidden": "^0.1.4",
-    "@toruslabs/torus-embed": "^0.2.6",
+    "@toruslabs/torus-embed": "^1.8.7",
     "@walletconnect/browser": "^1.0.0-beta.39",
     "@walletconnect/qrcode-modal": "^1.0.0-beta.39",
     "authereum": "^0.0.4-beta.47",
