@@ -24,7 +24,7 @@
     "Rimble"
   ],
   "dependencies": {
-    "@arkane-network/arkane-connect": "^1.11.0",
+    "@arkane-network/arkane-connect": "^1.27.0",
     "@portis/web3": "^2.0.0-beta.54",
     "@reach/dialog": "^0.2.9",
     "@reach/tabs": "^0.1.6",
@@ -35,7 +35,7 @@
     "authereum": "^0.0.4-beta.47",
     "bitski": "^0.10.6",
     "fortmatic": "^1.0.0",
-    "gatsby": "^2.18.10",
+    "gatsby": "^2.31.0",
     "gatsby-image": "^2.2.17",
     "gatsby-plugin-create-client-paths": "^2.1.17",
     "gatsby-plugin-lodash": "^3.1.15",
